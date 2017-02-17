@@ -8,6 +8,12 @@ Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "QRCodifier.Installer", "..\
 		{D56B6C00-5B1C-4A8B-81E2-F069F61C2A5B} = {D56B6C00-5B1C-4A8B-81E2-F069F61C2A5B}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4D766460-AE67-4CE3-ACF4-6AA291E7EE26}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
