@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Barcode.Properties {
+namespace DynamicDevices.QRCodifier.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

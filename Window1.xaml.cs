@@ -4,13 +4,14 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using System.Reflection;
 
 using DYMO.Label.Framework;
 
 using Gma.QrCodeNet.Encoding;
 using Gma.QrCodeNet.Encoding.Windows.Controls;
 
-namespace Barcode
+namespace DynamicDevices.QRCodifier
 {
     /// <summary>
     /// Interaction logic for Window1.xaml
@@ -23,6 +24,9 @@ namespace Barcode
         public Window1()
         {
             InitializeComponent();
+
+            Title += " v" + Assembly.GetEntryAssembly().GetName().Version;
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

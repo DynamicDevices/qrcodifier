@@ -1,7 +1,7 @@
-﻿<Window x:Class="Barcode.Window1"
+﻿<Window x:Class="DynamicDevices.QRCodifier.Window1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="DoES QRCodifier" Height="460" Width="600" Loaded="Window_Loaded">
+    Title="DoES QRCodifier" Height="460" Width="600" Loaded="Window_Loaded" Icon="DD-All.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
