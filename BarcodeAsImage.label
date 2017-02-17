@@ -6,7 +6,8 @@
     <DrawCommands>
         <RoundRectangle X="0" Y="0" Width="1581" Height="5040" Rx="270" Ry="270" />
     </DrawCommands>
-    <ObjectInfo>
+  
+  <ObjectInfo>
         <ImageObject>
             <Name>Image</Name>
             <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
@@ -24,4 +25,61 @@
         </ImageObject>
         <Bounds X="331" Y="57.9999999999999" Width="3060" Height="1435" />
     </ObjectInfo>
+
+  <ObjectInfo>
+    <TextObject>
+      <Name>TextLine1</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <LinkedObjectName></LinkedObjectName>
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>False</IsVariable>
+      <HorizontalAlignment>Left</HorizontalAlignment>
+      <VerticalAlignment>Top</VerticalAlignment>
+      <TextFitMode>AlwaysFit</TextFitMode>
+      <UseFullFontHeight>False</UseFullFontHeight>
+      <Verticalized>False</Verticalized>
+      <StyledText>
+        <Element>
+          <String>BARCODE</String>
+          <Attributes>
+            <Font Family="Arial" Size="8" Bold="False" Italic="False"
+                         Underline="False" Strikeout="False" />
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+          </Attributes>
+        </Element>
+      </StyledText>
+    </TextObject>
+    <Bounds X="2000" Y="257.9999999999999" Width="2500" Height="1435" />
+  </ObjectInfo>
+
+  <ObjectInfo>
+    <TextObject>
+      <Name>TextLine2</Name>
+      <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+      <BackColor Alpha="0" Red="255" Green="255" Blue="255" />
+      <LinkedObjectName></LinkedObjectName>
+      <Rotation>Rotation0</Rotation>
+      <IsMirrored>False</IsMirrored>
+      <IsVariable>False</IsVariable>
+      <HorizontalAlignment>Left</HorizontalAlignment>
+      <VerticalAlignment>Top</VerticalAlignment>
+      <TextFitMode>AlwaysFit</TextFitMode>
+      <UseFullFontHeight>False</UseFullFontHeight>
+      <Verticalized>False</Verticalized>
+      <StyledText>
+        <Element>
+          <String>BARCODE</String>
+          <Attributes>
+            <Font Family="Arial" Size="8" Bold="False" Italic="False"
+                         Underline="False" Strikeout="False" />
+            <ForeColor Alpha="255" Red="0" Green="0" Blue="0" />
+          </Attributes>
+        </Element>
+      </StyledText>
+    </TextObject>
+    <Bounds X="2000" Y="757.9999999999999" Width="2500" Height="1435" />
+  </ObjectInfo>
+
 </DieCutLabel>

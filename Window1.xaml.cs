@@ -18,54 +18,27 @@ namespace Barcode
     public partial class Window1
     {
         private BitmapImage _currentQRImage;
+        private ILabel _label = Label.Open(Application.GetResourceStream(new Uri("BarcodeAsImage.label", UriKind.Relative)).Stream);
 
         public Window1()
         {
             InitializeComponent();
-            CalculateQRCode(this, null);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             PrintersComboBox.ItemsSource = Framework.GetLabelWriterPrinters();
             PrintersComboBox.SelectedIndex = 0;
-        }
 
-        private void PrintBarcodeButton_Click(object sender, RoutedEventArgs e)
-        {
-            // load label template
-            var label = DYMO.Label.Framework.Label.Open(
-                Application.GetResourceStream(
-                    new Uri("Barcode.label", UriKind.Relative)).Stream);
-
-            // set barcode data
-            label.SetObjectText("Barcode", "http://developers.dymo.com");
-
-            // print
-            try
-            {
-                label.Print(PrintersComboBox.Text);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error printing: " + ex.Message);
-            }
+            MakeLabel(this, null);
         }
 
         private void PrintBarcodeAsImageButton_Click(object sender, RoutedEventArgs e)
         {
-            // load label template
-            var label = DYMO.Label.Framework.Label.Open(
-                Application.GetResourceStream(
-                    new Uri("BarcodeAsImage.label", UriKind.Relative)).Stream);
-
-            // set data as a barcode image
-            label.SetImagePngData("Image", ((BitmapImage)QRCodeImage.Source).StreamSource);
-
             // print
             try
             {
-                label.Print(PrintersComboBox.Text);
+                _label.Print(PrintersComboBox.Text);
             }
             catch (Exception ex)
             {
@@ -74,10 +47,9 @@ namespace Barcode
 
         }
 
-        private void CalculateQRCode(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        private void MakeLabel(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-            byte[] data;
-
+            // - calculate QR image
             using (var ms = new MemoryStream())
             {
                 var encoder = new QrEncoder();
@@ -85,13 +57,29 @@ namespace Barcode
                 var renderer = new Renderer(5);
                 renderer.WriteToStream(qrCode.Matrix, ms, ImageFormat.Png);
 
-                data = ms.ToArray();
+                ms.Seek(0, SeekOrigin.Begin);
+
+                // - set data as a barcode image
+                _label.SetImagePngData("Image", ms);
             }
+
+            // - set text
+            try
+            {
+                _label.SetObjectText("TextLine1", TextLine1.Text);
+                _label.SetObjectText("TextLine2", TextLine2.Text);
+            }
+            catch { }
+
+            // - render label
+            var data = _label.RenderAsPng(null, null);
 
             var bi = new BitmapImage();
             bi.BeginInit();
             bi.StreamSource = new MemoryStream(data);
             bi.EndInit();
+
+            // - set it into the UI image 
             try
             {
                 QRCodeImage.Source = bi;

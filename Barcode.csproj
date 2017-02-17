@@ -103,7 +103,6 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Scripts\jquery-2.1.1.min.map" />
-    <Resource Include="Barcode.label" />
     <Resource Include="BarcodeAsImage.label" />
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
