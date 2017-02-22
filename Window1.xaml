@@ -26,8 +26,8 @@
         <ComboBox x:Name="PrintersComboBox" Grid.Row="0" Grid.Column="1" DisplayMemberPath="Name"></ComboBox>
         <Image x:Name="QRCodeImage" Grid.Row="1" Grid.Column="1"></Image>
         <TextBox x:Name="QRCodeURI" Grid.Row="2" Grid.Column="1" TextChanged="MakeLabel">https://github.com/DoESLiverpool/wiki/wiki</TextBox>
-        <TextBox x:Name="TextLine1" Grid.Row="3" Grid.Column="1" TextChanged="MakeLabel">Text Line 1</TextBox>
-        <TextBox x:Name="TextLine2" Grid.Row="4" Grid.Column="1" TextChanged="MakeLabel">Text Line 2</TextBox>
+        <TextBox x:Name="TextLine1" Grid.Row="3" Grid.Column="1" TextChanged="MakeLabel">DoES Liverpool</TextBox>
+        <TextBox x:Name="TextLine2" Grid.Row="4" Grid.Column="1" TextChanged="MakeLabel">Wiki QR Code</TextBox>
         <Button x:Name="PrintBarcodeAsImageButton" Grid.Row="5" Grid.Column="2" Click="PrintBarcodeAsImageButton_Click">Print Q/R Code</Button>
     </Grid>
 </Window>

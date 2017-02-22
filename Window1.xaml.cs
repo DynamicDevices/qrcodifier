@@ -26,7 +26,6 @@ namespace DynamicDevices.QRCodifier
             InitializeComponent();
 
             Title += " v" + Assembly.GetEntryAssembly().GetName().Version;
-
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -39,20 +38,27 @@ namespace DynamicDevices.QRCodifier
 
         private void PrintBarcodeAsImageButton_Click(object sender, RoutedEventArgs e)
         {
+
             // print
             try
             {
                 _label.Print(PrintersComboBox.Text);
+
+                MessageBox.Show(this, "Printed!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error printing: " + ex.Message);
+                MessageBoxEx.Show(this, "Error printing: " + ex.Message);
             }
 
         }
 
         private void MakeLabel(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
+            // Prevent exceptions
+            if (!this.IsLoaded)
+                return;
+
             // - calculate QR image
             using (var ms = new MemoryStream())
             {
@@ -68,12 +74,9 @@ namespace DynamicDevices.QRCodifier
             }
 
             // - set text
-            try
-            {
-                _label.SetObjectText("TextLine1", TextLine1.Text);
-                _label.SetObjectText("TextLine2", TextLine2.Text);
-            }
-            catch { }
+            _label.SetObjectText("TextLine1", TextLine1.Text);
+            _label.SetObjectText("TextLine2", TextLine2.Text);
+            _label.SetObjectText("URL", QRCodeURI.Text);
 
             // - render label
             var data = _label.RenderAsPng(null, null);
@@ -84,11 +87,7 @@ namespace DynamicDevices.QRCodifier
             bi.EndInit();
 
             // - set it into the UI image 
-            try
-            {
-                QRCodeImage.Source = bi;
-            }
-            catch { }
+            QRCodeImage.Source = bi;
         }
     }
 }

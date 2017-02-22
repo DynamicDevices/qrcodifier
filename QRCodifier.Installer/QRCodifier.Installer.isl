@@ -1136,8 +1136,8 @@
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
 		<row><td>CommonFilesFolder</td><td>TARGETDIR</td><td>.:Common</td><td/><td>0</td><td/></row>
 		<row><td>DATABASEDIR</td><td>ISYourDataBaseDir</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>DYNAMIC_DEVICES</td><td>ProgramFilesFolder</td><td>DYNAMI~1|Dynamic Devices</td><td/><td>0</td><td/></row>
 		<row><td>DYNAMIC_DEVICES_LT</td><td>ProgramFilesFolder</td><td>DYNAMI~1|Dynamic Devices Lt</td><td/><td>0</td><td/></row>
-		<row><td>DYNAMIC_DEVICES_LTD</td><td>ProgramFilesFolder</td><td>DYNAMI~1|Dynamic Devices Ltd</td><td/><td>0</td><td/></row>
 		<row><td>DesktopFolder</td><td>TARGETDIR</td><td>.:Desktop</td><td/><td>3</td><td/></row>
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
@@ -1150,7 +1150,7 @@
 		<row><td>LocalAppDataFolder</td><td>TARGETDIR</td><td>.:LocalA~1|LocalAppData</td><td/><td>0</td><td/></row>
 		<row><td>MY_PRODUCT_NAME</td><td>ARROWVALE</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MY_PRODUCT_NAME1</td><td>DYNAMIC_DEVICES_LT</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
-		<row><td>MY_PRODUCT_NAME2</td><td>DYNAMIC_DEVICES_LTD</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
+		<row><td>MY_PRODUCT_NAME2</td><td>DYNAMIC_DEVICES</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
@@ -1158,7 +1158,7 @@
 		<row><td>PrintHoodFolder</td><td>TARGETDIR</td><td>.:PRINTH~1|PrintHood</td><td/><td>0</td><td/></row>
 		<row><td>ProgramFilesFolder</td><td>TARGETDIR</td><td>.:PROGRA~1|program files</td><td/><td>0</td><td/></row>
 		<row><td>ProgramMenuFolder</td><td>TARGETDIR</td><td>.:Programs</td><td/><td>3</td><td/></row>
-		<row><td>QR_CODIFIER</td><td>DYNAMIC_DEVICES_LTD</td><td>QRCODI~1|QR Codifier</td><td/><td>0</td><td/></row>
+		<row><td>QR_CODIFIER</td><td>DYNAMIC_DEVICES</td><td>QRCODI~1|QR Codifier</td><td/><td>0</td><td/></row>
 		<row><td>RecentFolder</td><td>TARGETDIR</td><td>.:Recent</td><td/><td>0</td><td/></row>
 		<row><td>SendToFolder</td><td>TARGETDIR</td><td>.:SendTo</td><td/><td>3</td><td/></row>
 		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>.:STARTM~1|Start Menu</td><td/><td>3</td><td/></row>
@@ -2768,7 +2768,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Dynamic Devices Ltd</td><td>0</td><td/><td>-1994046064</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Dynamic Devices</td><td>0</td><td/><td>-1322956245</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-1994003088</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-1994003088</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>-1994003088</td></row>
@@ -3867,8 +3867,8 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-1994003088</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-1994003088</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-1994003088</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>www.dynamicdevices.co.uk</td><td>0</td><td/><td>-1994031728</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Dynamic Devices Ltd</td><td>0</td><td/><td>-1994046064</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.DynamicDevices.com</td><td>0</td><td/><td>-1322956245</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Dynamic Devices</td><td>0</td><td/><td>-1322956245</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>QRCODI~1|QR Codifier</td><td>0</td><td/><td>-1994045584</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1994003088</td></row>
 	</table>
@@ -4110,7 +4110,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{0A5C2F95-1531-4061-8540-E2866FC20160}</td></row>
 		<row><td>ISUSSignature</td><td>{F412FC09-5C75-472C-B2C3-9113C71D4E45}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewUI,viewDependencies,viewBillboards,viewISToday,viewAppFiles,viewShortcuts</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewUI,viewDependencies,viewBillboards,viewISToday,viewAppFiles,viewShortcuts,viewFeatureFiles,viewProject</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4484,7 +4484,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{A6579493-C33F-4DFE-9154-78BEAD5C5449}</td><td/></row>
 		<row><td>ProductName</td><td>QR Codifier</td><td/></row>
-		<row><td>ProductVersion</td><td>1.00.0000</td><td/></row>
+		<row><td>ProductVersion</td><td>1.00.0001</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
